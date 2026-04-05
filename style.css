@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;}
+body { background: linear-gradient(135deg,#0f172a,#020617); color:#e2e8f0;}
+nav { display:flex; justify-content:space-between; padding:20px 60px; background:rgba(255,255,255,0.05); backdrop-filter:blur(10px);}
+nav h2 { color:#38bdf8;}
+nav ul { display:flex; list-style:none; gap:25px;}
+nav a { color:#e2e8f0; text-decoration:none; transition:0.3s;}
+nav a:hover { color:#38bdf8;}
+.hero { display:flex; justify-content:space-around; align-items:center; padding:80px; flex-wrap:wrap;}
+.hero-content { max-width:500px;}
+.hero-content h1 { font-size:2.8rem;}
+.hero-content h3 { color:#38bdf8; margin:10px 0;}
+.hero-content p { color:#94a3b8; margin:15px 0;}
+.buttons { margin-top:20px;}
+.btn { display:inline-block; padding:12px 25px; background:#38bdf8; color:#020617; border-radius:8px; text-decoration:none; transition:0.3s;}
+.btn:hover { background:#0ea5e9;}
+.btn-outline { border:2px solid #38bdf8; padding:10px 20px; margin-left:10px; color:#38bdf8; text-decoration:none; border-radius:8px;}
+.hero-img img { width:280px; border-radius:20px; border:3px solid #38bdf8;}
+.container { padding:60px;}
+.projects { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px;}
+.card { background: rgba(255,255,255,0.05); padding:25px; border-radius:15px; backdrop-filter:blur(12px); transition:0.3s;}
+.card:hover { transform:translateY(-8px); background: rgba(56,189,248,0.1);}
+.skill { display:inline-block; padding:10px 15px; margin:8px; border-radius:20px; background:rgba(56,189,248,0.1); border:1px solid #38bdf8;}
+.project-links a { display:inline-block; margin-right:10px; margin-top:10px; color:#38bdf8; text-decoration:none;}
+footer { text-align:center; padding:20px; color:#64748b;}
+ul { margin-left:20px; }
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+/* Glow + Lift */
+.btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(56,189,248,0.5);
+}
+
+/* Shine Effect */
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.3);
+  transform: skewX(-25deg);
+  transition: 0.5s;
+}
+
+.btn:hover::before {
+  left: 125%;
+}
